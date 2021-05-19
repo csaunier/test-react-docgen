@@ -1,0 +1,24 @@
+{
+  "name": "test-react-docgen",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/csaunier/test-react-docgen.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/csaunier/test-react-docgen/issues"
+  },
+  "homepage": "https://github.com/csaunier/test-react-docgen#readme",
+  "dependencies": {
+    "react": "^17.0.2",
+    "prop-types": "^15.7.2",
+    "react-docgen": "^6.0.0-alpha.0"
+  }
+}
