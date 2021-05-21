@@ -1,8 +1,12 @@
 #!/usr/bin/env node
 
 const docgen = require('react-docgen');
-const src = require('fs').readFileSync('src/Button/Button.jsx');
+const filePath = 'src/Button/Button.jsx';
+const fileContent = require('fs').readFileSync(filePath, 'utf8');
 
-const componentInfoImport = docgen.parse(src, null, null, { importer: docgen.importers.makeFsImporter() } );
+const componentInfoImport = docgen.parse(fileContent, null, null, {
+  importer: docgen.importers.makeFsImporter(),
+  filename: filePath,
+});
 
 console.log('DOCGEN = ', componentInfoImport);
